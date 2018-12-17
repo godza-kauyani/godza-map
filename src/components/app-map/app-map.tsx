@@ -10,23 +10,22 @@ export class AppMap {
 	
 	componentWillLoad(){
 		mapboxgl.accessToken = 'pk.eyJ1IjoiZ29kemEiLCJhIjoiY2pwczhwMGtiMDA2cjQzbzZ6cDU2NG95NCJ9.cds9feybkCrU1v5upFxTDw';
-		const  map = new mapboxgl.Map({
-    		container: 'map',
-    		style: 'mapbox://styles/mapbox/streets-v9'
-		});
+		var map = new mapboxgl.Map({
+   			 container: 'map', // container id
+    			style: 'mapbox://styles/mapbox/streets-v9',
+    			center: [28.4167, -20.8333], // starting position
+    			zoom: 3 // starting zoom
+			});
+
+		// Add geolocate control to the map.
 		map.addControl(new mapboxgl.GeolocateControl({
     			positionOptions: {
         		enableHighAccuracy: true
     			},
     			trackUserLocation: true
 			}));
-	};
-
-  	render() {
-    		return [
-	    	<div id='map'>
-			<h1>GodzaAp</h1>
-			</div>
-		];
-  }
+  		}
+	render(){
+		return <div id='map'></div>
+	}
 }
