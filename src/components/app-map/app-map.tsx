@@ -7,8 +7,9 @@ import  mapboxgl from 'mapbox-gl';
 })
 
 export class AppMap {
+	
 	componentWillLoad(){
-		mapboxgl.accessToken ='pk.eyJ1IjoiZ29kemEiLCJhIjoiY2pseGc4ZXpmMWJ0aTN2bGRudXgzeWlvZSJ9.8lQKkVp9SWf4IOkSdezqow';
+		mapboxgl.accessToken = 'pk.eyJ1IjoiZ29kemEiLCJhIjoiY2pwczhwMGtiMDA2cjQzbzZ6cDU2NG95NCJ9.cds9feybkCrU1v5upFxTDw';
 		const  map = new mapboxgl.Map({
     		container: 'map',
     		style: 'mapbox://styles/mapbox/streets-v9'
