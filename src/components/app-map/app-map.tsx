@@ -13,7 +13,7 @@ export class AppMap {
 		var map = new mapboxgl.Map({
    			 container: 'map', // container id
     			style: 'mapbox://styles/mapbox/streets-v9',
-    			center: [28.4167, -20.8333], // starting position
+    			center: [- 0.1404545 , 51.5220163 ], // starting position
     			zoom: 3 // starting zoom
 			});
 
